@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qazi Nasir — Chemical Engineering & AI Research</title>
+<meta name="description" content="Qazi Nasir — Ph.D. researcher in chemical engineering, thermodynamics, gas hydrates, CO₂ capture, catalysis, and AI-driven process optimization. Publications, research, CV.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+<noscript><style>.reveal-up{ opacity:1 !important; transform:none !important; }</style></noscript>
+</head>
+<body class="portfolio-home">
+
+<header>
+  <div class="wrap">
+    <div class="brand"><strong>QAZI NASIR</strong> <span class="dot">·</span> CV / RESEARCH</div>
+    <nav>
+      <a href="#hero">Profile</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">Ph.D. — Chemical Engineering & AI for Energy</div>
+        <h1><span class="reveal hero-name">Qazi</span><br><span class="reveal hero-name" style="animation-delay:120ms;">Nasir</span></h1>
+        <p class="bio">Chemical Engineering Ph.D. with 19+ years of academic, research, and industry experience specializing in thermodynamics, separations, CO₂ capture & utilization, gas hydrates, catalysis, and AI-driven process optimization. Based in Annandale, Virginia.</p>
+      </div>
+      <div class="gantry">
+        <div class="orbit">
+          <svg class="orbit-ring" viewBox="0 0 100 100" aria-hidden="true">
+            <line class="orbit-spoke orbit-spoke-out" x1="50" y1="50" x2="50" y2="-11"></line>
+            <line class="orbit-spoke orbit-spoke-in" x1="50" y1="50" x2="108" y2="32"></line>
+            <line class="orbit-spoke orbit-spoke-out" x1="50" y1="50" x2="83" y2="93"></line>
+            <line class="orbit-spoke orbit-spoke-out" x1="50" y1="50" x2="13" y2="101"></line>
+            <line class="orbit-spoke orbit-spoke-in" x1="50" y1="50" x2="-3" y2="34"></line>
+          </svg>
+          <div class="photo-swap" tabindex="0">
+            <div class="photo-flip">
+              <img class="photo-a" src="figs/profile-photo.jpg" alt="Qazi Nasir" width="260" height="260">
+              <img class="photo-b" src="figs/profile-photo-alt.jpg" alt="Qazi Nasir alternate" width="260" height="260">
+            </div>
+          </div>
+          <a class="orbit-node orbit-node-cv" href="cv.html" aria-label="Curriculum Vitae">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8L14 2Zm0 2.5L18.5 9H14V4.5ZM8 13h8v1.6H8V13Zm0 3.2h8v1.6H8v-1.6Z"/></svg>
+            <span class="orbit-tip">CV PDF</span>
+          </a>
+          <a class="orbit-node orbit-node-email" data-email-link href="#" aria-label="Email">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+            <span class="orbit-tip">Email</span>
+          </a>
+          <a class="orbit-node orbit-node-scholar" href="https://scholar.google.com/citations?user=MeU6dE8AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 8l11 6 9-4.91V17h2V8L12 2Zm-7 9.82V16l7 4 7-4v-4.18L12 15.64 5 11.82Z"/></svg>
+            <span class="orbit-tip">Google Scholar</span>
+          </a>
+          <a class="orbit-node orbit-node-github" href="https://github.com/qazinasir" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-1.96c-3.2.7-3.88-1.36-3.88-1.36-.52-1.31-1.27-1.66-1.27-1.66-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.17 1.19a10.93 10.93 0 0 1 5.77 0c2.2-1.5 3.17-1.19 3.17-1.19.62 1.59.23 2.77.11 3.06.73.81 1.18 1.85 1.18 3.11 0 4.43-2.69 5.41-5.25 5.69.42.36.79 1.06.79 2.15v3.19c0 .31.21.67.79.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            <span class="orbit-tip">GitHub</span>
+          </a>
+          <a class="orbit-node orbit-node-linkedin" href="https://www.linkedin.com/in/qazinasir" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 8.75H3.56V20h3.38V8.75ZM5.25 3.5a1.97 1.97 0 1 0 0 3.94 1.97 1.97 0 0 0 0-3.94ZM20.44 13.56c0-3.39-1.81-4.97-4.23-4.97-1.95 0-2.82 1.07-3.31 1.83V8.75H9.56V20h3.34v-5.57c0-1.47.28-2.89 2.1-2.89 1.79 0 1.82 1.68 1.82 2.99V20h3.62v-6.44Z"/></svg>
+            <span class="orbit-tip">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROFILE ================= -->
+  <section id="profile">
+    <div class="section-inner reveal-up">
+      <div class="eyebrow">Profile</div>
+      <h2 class="htitle">About</h2>
+      <p class="bio-large">I hold a <strong>Ph.D. in Chemical Engineering</strong> from <a href="https://www.utp.edu.my/" target="_blank" rel="noopener">Universiti Teknologi PETRONAS</a>, an <strong>MSc in Petroleum Engineering</strong> from <a href="https://www.tees.ac.uk/" target="_blank" rel="noopener">Teesside University</a>, and a <strong>BSc in Chemical Engineering</strong> from the <a href="https://www.icet.edu.pk/" target="_blank" rel="noopener">Institute of Chemical Engineering</a>. I have built my expertise across thermodynamics, separations, gas hydrates, CO₂ capture, catalysis, and AI-driven process optimization through academic and industry roles spanning Malaysia, Oman, Pakistan, and the US.</p>
+      <p class="bio-large">I am currently an <strong>Assistant Professor</strong> at the <a href="https://www.unizwa.edu.om/" target="_blank" rel="noopener">University of Nizwa</a> (on leave), and have previously served at the <a href="https://scme.nust.edu.pk/" target="_blank" rel="noopener">School of Chemical & Material Engineering, NUST</a>. My research focuses on thermodynamic modeling, gas hydrate prediction, catalytic hydrogenation of CO₂ to methanol, plasma-assisted CO₂ conversion, and machine learning for process optimization. I have secured competitive research funding from <strong>PETRONAS</strong>, <strong>The Research Council (TRC) Oman</strong>, and <strong>YUTP</strong>, and published extensively in high-impact peer-reviewed journals.</p>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH ================= -->
+  <section id="research">
+    <div class="section-inner reveal-up">
+      <div class="eyebrow">Research</div>
+      <h2 class="htitle">Publications</h2>
+
+      <div class="research-block">
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> The Canadian Journal of Chemical Engineering, 2023</div>
+          <h3 class="pub-title"><a href="publications/hydrate-ml.html">Application of Machine Learning on Hydrate Formation Prediction of Pure Components with Water and Inhibitors Solution</a></h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, H. Suleman, W.S. Abdul Majeed</p>
+          <p class="pub-venue">The Canadian Journal of Chemical Engineering</p>
+          <p class="pub-abstract">Applied machine learning techniques to predict gas hydrate formation conditions for pure components in the presence of water and inhibitor solutions, demonstrating accurate and efficient phase behavior modeling.</p>
+          <div class="pub-links">
+            <a class="pill pill-primary" href="publications/hydrate-ml.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1002/cjce.25291" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Machine Learning</span><span class="tag">Gas Hydrates</span><span class="tag">Phase Behavior</span><span class="tag">Process Optimization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Chemical Engineering & Technology, 2023</div>
+          <h3 class="pub-title"><a href="publications/hydrate-multi.html">Predicting Gas Hydrate Equilibria in Multicomponent Systems with a Machine Learning Approach</a></h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, W.S. Abdul Majeed, H. Suleman</p>
+          <p class="pub-venue">Chemical Engineering & Technology</p>
+          <p class="pub-abstract">Developed a machine learning framework for predicting gas hydrate equilibrium conditions in multicomponent hydrocarbon systems, offering a robust alternative to traditional thermodynamic modeling.</p>
+          <div class="pub-links">
+            <a class="pill pill-primary" href="publications/hydrate-multi.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1002/ceat.202300055" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Machine Learning</span><span class="tag">Gas Hydrates</span><span class="tag">Multicomponent Systems</span><span class="tag">Equilibrium</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Neural Computing and Applications, 2022</div>
+          <h3 class="pub-title"><a href="publications/mlp-hydrate.html">A Multi-Layer Perceptron Neural Network Model for Predicting Hydrate Equilibrium Conditions</a></h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, H. Suleman, I. Ud Din, Y.A. Elfadol</p>
+          <p class="pub-venue">Neural Computing and Applications</p>
+          <p class="pub-abstract">Developed a multi-layer perceptron neural network model for accurate prediction of hydrate equilibrium conditions across diverse multicomponent hydrocarbon systems.</p>
+          <div class="pub-links">
+            <a class="pill pill-primary" href="publications/mlp-hydrate.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1007/s00521-022-07284-4" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Neural Networks</span><span class="tag">Gas Hydrates</span><span class="tag">Prediction</span><span class="tag">MLP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Natural Gas Science and Engineering, 2020</div>
+          <h3 class="pub-title"><a href="publications/hydrate-review.html">A Review on the Role and Impact of Various Additives as Promoters/Inhibitors for Gas Hydrate Formation</a></h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, H. Suleman, Y.A. Elsheikh</p>
+          <p class="pub-venue">Journal of Natural Gas Science and Engineering</p>
+          <p class="pub-abstract">Comprehensive review of the role and impact of various chemical additives as promoters or inhibitors for gas hydrate formation, covering thermodynamic and kinetic effects.</p>
+          <div class="pub-links">
+            <a class="pill pill-primary" href="publications/hydrate-review.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1016/j.jngse.2020.103211" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Gas Hydrates</span><span class="tag">Additives</span><span class="tag">Review</span><span class="tag">Flow Assurance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Environmental Technology & Innovation, 2023</div>
+          <h3 class="pub-title"><a href="publications/anaerobic.html">Enhanced Anaerobic Co-Digestion of Food Waste and Solid Poultry Slaughterhouse Waste Using Fixed Bed Digester</a></h3>
+          <p class="pub-authors">A. Ahmad, R. Ghufran, <span class="me">Qazi Nasir</span>, F. Shahitha, M. Al-Sibani, A. Al-Rahbi</p>
+          <p class="pub-venue">Environmental Technology & Innovation</p>
+          <p class="pub-abstract">Investigated enhanced anaerobic co-digestion performance and energy recovery from food waste and poultry slaughterhouse waste using a fixed bed digester system.</p>
+          <div class="pub-links">
+            <a class="pill pill-primary" href="publications/anaerobic.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1016/j.eti.2023.103099" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Bioenergy</span><span class="tag">Anaerobic Digestion</span><span class="tag">Waste Management</span><span class="tag">Renewable Energy</span>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="research-block">
+      <div class="research-subhead">Book Chapter</div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Elsevier, 2024</div>
+          <h3 class="pub-title">Hydrate Formation Challenges in the Pipelines</h3>
+          <p class="pub-venue">Advances in G. Gases Vol. 3 — Greenhouse Gases Storage and Transportation, Elsevier</p>
+          <p class="pub-abstract">A comprehensive chapter examining the challenges posed by hydrate formation in oil and gas pipelines, covering mechanisms, prevention strategies, and mitigation techniques.</p>
+          <div class="tag-row">
+            <span class="tag">Gas Hydrates</span><span class="tag">Pipeline Integrity</span><span class="tag">Flow Assurance</span><span class="tag">Prevention Strategies</span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="research-block">
+      <div class="research-subhead">Books</div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot presented"></span> Paperback, 2017</div>
+          <h3 class="pub-title">Thermodynamic and Phase Behavior Study of Fluid and Gas Hydrate</h3>
+          <p class="pub-venue">Available on Amazon</p>
+          <p class="pub-abstract">A comprehensive study of thermodynamic and phase behavior of fluid and clathrate hydrate systems, based on doctoral research at Universiti Teknologi PETRONAS.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/hydrate-challenges-pipelines-book-chapter.html">Project page</a>
+                        <a class="pill pill-primary" href="publications/thermodynamic-phase-behavior-fluid-hydrate-book.html">Project page</a>
+            <a class="pill" href="https://amzn.to/3ONVXXy" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Thermodynamics</span><span class="tag">Phase Behavior</span><span class="tag">Gas Hydrates</span><span class="tag">Fluid Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot presented"></span> Paperback, 2023</div>
+          <h3 class="pub-title">Transforming Business Operations for Improved Efficiency and Profitability: The Role of Artificial Intelligence in Manufacturing</h3>
+          <p class="pub-venue">Available on Amazon</p>
+          <p class="pub-abstract">Explores how AI technologies can revolutionize manufacturing operations, driving efficiency and profitability through data-driven decision making.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/ai-manufacturing-efficiency-book.html">Project page</a>
+            <a class="pill" href="https://bit.ly/43c4rMy" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Artificial Intelligence</span><span class="tag">Manufacturing</span><span class="tag">Process Optimization</span><span class="tag">Industry 4.0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot presented"></span> Paperback</div>
+          <h3 class="pub-title">Fueling the Future: The Revolutionary Guide to Biodiesel Production</h3>
+          <p class="pub-venue">Available on Amazon</p>
+          <p class="pub-abstract">A comprehensive guide covering biodiesel production technologies, from feedstocks to finished fuel.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/fueling-future-biodiesel-book.html">Project page</a>
+            <a class="pill" href="https://bit.ly/43DygoX" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Biodiesel</span><span class="tag">Renewable Energy</span><span class="tag">Biofuels</span><span class="tag">Green Chemistry</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot presented"></span> Paperback</div>
+          <h3 class="pub-title">Exploring the Potential of Gas Hydrates: A Comprehensive Guide to Applications</h3>
+          <p class="pub-venue">Available on Amazon</p>
+          <p class="pub-abstract">An in-depth exploration of gas hydrate applications, from energy storage to transportation and beyond.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/gas-hydrates-applications-book.html">Project page</a>
+            <a class="pill" href="https://bit.ly/3MNKu7M" target="_blank" rel="noopener">Amazon ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Gas Hydrates</span><span class="tag">Energy Storage</span><span class="tag">Carbon Capture</span><span class="tag">Flow Assurance</span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="research-block">
+      <div class="research-subhead">Selected Journal Publications</div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Comments on Inorganic Chemistry, 2025</div>
+          <h3 class="pub-title">The Opportunities and Challenges of Using Nanomaterials as Photocatalysts for the Degradation of Environmental Pollutants</h3>
+          <p class="pub-authors">I.U. Din, J. Khan, <span class="me">Qazi Nasir</span></p>
+          <p class="pub-venue">Comments on Inorganic Chemistry, 1(46)</p>
+          <p class="pub-abstract">Reviews the opportunities and challenges of using nanomaterial-based photocatalysts for degrading environmental pollutants in water and air treatment.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/nanomaterials-photocatalysts-pollutants.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1080/02603594.2025.2451829" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Nanomaterials</span><span class="tag">Photocatalysis</span><span class="tag">Environmental Remediation</span><span class="tag">Green Chemistry</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> ChemistrySelect, 2024</div>
+          <h3 class="pub-title">Effects of Ni Loadings on the Structure and Morphology of Carbon Nanotubes Using Nickel Doped Iron Oxide Catalysts</h3>
+          <p class="pub-authors">H. Gul, M. Bilal, T. Hussain, I.U. Din, M. Mubashir, <span class="me">Qazi Nasir</span></p>
+          <p class="pub-venue">ChemistrySelect, 9(38)</p>
+          <p class="pub-abstract">Investigated the effect of nickel loadings on the structural and morphological properties of carbon nanotubes synthesized using nickel-doped iron oxide catalysts.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/ni-loadings-carbon-nanotubes.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1002/slct.202402285" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Carbon Nanotubes</span><span class="tag">Catalyst Synthesis</span><span class="tag">Nanomaterials</span><span class="tag">Characterization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Energies, 2024</div>
+          <h3 class="pub-title">Passive Direct Air Capture of Carbon Dioxide with an Alkaline Amino Acid Salt in Water-Based Paints</h3>
+          <p class="pub-authors">G. Ngwu, H. Suleman, F. Ahmad, D. Qadir, Z. Shamair, <span class="me">Qazi Nasir</span>, M. Nawaz</p>
+          <p class="pub-venue">Energies, 17(2):320</p>
+          <p class="pub-abstract">Demonstrated passive direct air capture of CO₂ using an alkaline amino acid salt embedded in water-based paints for scalable carbon capture applications.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/passive-direct-air-capture-paints.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.3390/en17020320" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Direct Air Capture</span><span class="tag">CO₂ Capture</span><span class="tag">Amino Acid Salts</span><span class="tag">Carbon Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Advanced Manufacturing and Processing, 2023</div>
+          <h3 class="pub-title">Evaluation of Two Plumes Jet Plasma Reactor for Plasmolysis of H₂O Vapor and CO₂ Combination-Optimization Study</h3>
+          <p class="pub-authors">W.S. Abdul Majeed, <span class="me">Qazi Nasir</span>, M.H. Alajmi, K.A. Almaqbali</p>
+          <p class="pub-venue">Journal of Advanced Manufacturing and Processing</p>
+          <p class="pub-abstract">Evaluated and optimized a two-plumes jet plasma reactor for the plasmolysis of H₂O vapor and CO₂ mixtures for hydrogen and syngas production.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/plasma-reactor-plasmolysis-co2.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1002/amp2.10154" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Plasma Reactor</span><span class="tag">CO₂ Conversion</span><span class="tag">Hydrogen Production</span><span class="tag">Process Optimization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Neural Computing and Applications, 2023</div>
+          <h3 class="pub-title">Neural Network-Based Correlation and Statistical Identification of Data Outliers in H₂S-Alkanolamine-H₂O and CO₂-Alkanolamine-H₂O Datasets</h3>
+          <p class="pub-authors">B. Imai, <span class="me">Qazi Nasir</span>, A.S. Maulud, M. Nawaz, R. Nasir, H. Suleman</p>
+          <p class="pub-venue">Neural Computing and Applications</p>
+          <p class="pub-abstract">Developed neural network-based correlations for detecting and statistically identifying data outliers in H₂S- and CO₂-alkanolamine-water experimental datasets.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/neural-network-outliers-h2s-co2.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1007/s00521-022-07904-z" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Neural Networks</span><span class="tag">Data Quality</span><span class="tag">Gas Treatment</span><span class="tag">Statistical Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Environmental Chemical Engineering, 2021</div>
+          <h3 class="pub-title">A Review of Semi-Empirical Equilibrium Models for CO₂-Alkanolamine-H₂O Solutions and Their Mixtures at High Pressure</h3>
+          <p class="pub-authors">H. Suleman, A.S. Maulud, P.L. Fosbøl, <span class="me">Qazi Nasir</span>, R. Nasir, M.Z. Shahid, M. Nawaz, M. Abunowara</p>
+          <p class="pub-venue">Journal of Environmental Chemical Engineering</p>
+          <p class="pub-abstract">Comprehensively reviews semi-empirical equilibrium models for CO₂-alkanolamine-water solutions at high pressure, evaluating their accuracy and applicability.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/semi-empirical-equilibrium-models-co2-alkanolamine.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1016/j.jece.2020.104713" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Thermodynamic Modeling</span><span class="tag">CO₂ Capture</span><span class="tag">Alkanolamines</span><span class="tag">Phase Equilibrium</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Catalysts, 2020</div>
+          <h3 class="pub-title">CO₂ Conversion to Methanol over Novel Carbon Nanofiber-Based Cu/ZrO₂ Catalysts — A Kinetics Study</h3>
+          <p class="pub-authors">I.U. Din, M.S. Shaharun, A. Naeem, M.A. Alotaibi, A.I. Alharthi, <span class="me">Qazi Nasir</span></p>
+          <p class="pub-venue">Catalysts, 10(5):567</p>
+          <p class="pub-abstract">Investigated the kinetics of CO₂ hydrogenation to methanol over novel carbon nanofiber-supported Cu/ZrO₂ catalysts under varying reaction conditions.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/co2-methanol-cu-zro2-kinetics.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.3390/catal10050567" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">CO₂ Conversion</span><span class="tag">Methanol Synthesis</span><span class="tag">Catalysis</span><span class="tag">Kinetics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Natural Gas Science and Engineering, 2015</div>
+          <h3 class="pub-title">Measurement of Isothermal (Vapor + Liquid) Equilibria for Binary (CH₄+CO₂) and CO₂ Rich Synthetic Natural Gas Systems</h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, K.M. Sabil, K.K. Lau</p>
+          <p class="pub-venue">Journal of Natural Gas Science and Engineering</p>
+          <p class="pub-abstract">Measured isothermal vapor-liquid equilibria for binary CH₄-CO₂ and CO₂-rich synthetic natural gas mixtures to support natural gas processing and pipeline design.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/vle-ch4-co2-natural-gas.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1016/j.jngse.2015.08.045" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Vapor-Liquid Equilibrium</span><span class="tag">Natural Gas</span><span class="tag">CO₂</span><span class="tag">Experimental Thermodynamics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Chemical & Engineering Data, 2014</div>
+          <h3 class="pub-title">Hydrate Dissociation Condition Measurement of CO₂-Rich Mixed Gas in the Presence of Methanol/Ethylene Glycol and Electrolyte Aqueous Solution</h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, K.K. Lau, B. Lal, K.M. Sabil</p>
+          <p class="pub-venue">Journal of Chemical & Engineering Data</p>
+          <p class="pub-abstract">Measured hydrate dissociation conditions for CO₂-rich mixed gas in the presence of methanol, ethylene glycol, and electrolyte solutions for flow assurance.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/hydrate-dissociation-co2-methanol-eg.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1021/je5008313" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Gas Hydrates</span><span class="tag">Inhibitors</span><span class="tag">CO₂</span><span class="tag">Flow Assurance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Mini-Reviews in Organic Chemistry, 2022</div>
+          <h3 class="pub-title">A Review of Preparation Methods for Heterogeneous Catalysts</h3>
+          <p class="pub-authors">I.U. Din*, <span class="me">Qazi Nasir</span>, M.D. Garba, A.I. Alharthi, M.A. Alotaibi, M. Usman</p>
+          <p class="pub-venue">Mini-Reviews in Organic Chemistry</p>
+          <p class="pub-abstract">Provides a comprehensive review of preparation methods for heterogeneous catalysts, covering impregnation, co-precipitation, sol-gel, and related techniques.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/preparation-methods-heterogeneous-catalysts.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.2174/1570193X18666210308151136" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Heterogeneous Catalysis</span><span class="tag">Catalyst Preparation</span><span class="tag">Materials Science</span><span class="tag">Nanotechnology</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Applied Chemistry & Engineering, 2022</div>
+          <h3 class="pub-title">In Situ Transesterification/Reactive Extraction of Castor Bean Seeds Assisted by Flying Jet Plasma for Biodiesel Production</h3>
+          <p class="pub-authors">Y.A. Elsheikh, W.S. Abdul-Majeed, <span class="me">Qazi Nasir</span></p>
+          <p class="pub-venue">Applied Chemistry & Engineering</p>
+          <p class="pub-abstract">Developed an in situ transesterification and reactive extraction process for castor bean seeds assisted by flying jet plasma for efficient biodiesel production.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/plasma-transesterification-castor-biodiesel.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.14478/ace.2022.1086" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Biodiesel</span><span class="tag">Plasma Technology</span><span class="tag">Transesterification</span><span class="tag">Biofuels</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Process Safety and Environmental Protection, 2020</div>
+          <h3 class="pub-title">Effect of Pyrazolium Ionic Liquid Halide Content on In-Situ Transesterification of Castor Bean Seeds</h3>
+          <p class="pub-authors">Y.A. Elsheikh, F. Elfghi, <span class="me">Qazi Nasir</span>, N. Muhammad</p>
+          <p class="pub-venue">Process Safety and Environmental Protection</p>
+          <p class="pub-abstract">Investigated the effect of pyrazolium ionic liquid halide content on the efficiency of in-situ transesterification of castor bean seeds for biodiesel production.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/ionic-liquid-transesterification-castor.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1016/j.psep.2020.05.014" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Ionic Liquids</span><span class="tag">Biodiesel</span><span class="tag">Transesterification</span><span class="tag">Green Chemistry</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Iranian Journal of Chemistry & Chemical Engineering, 2020</div>
+          <h3 class="pub-title">A Hybrid Membrane-Absorption Process for Carbon Dioxide Capture: Effect of Different Alkanolamine on Energy Consumption</h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, H. Suleman, M. Elumalai</p>
+          <p class="pub-venue">Iranian Journal of Chemistry & Chemical Engineering</p>
+          <p class="pub-abstract">Evaluated the effect of different alkanolamine solvents on energy consumption in a hybrid membrane-absorption process for efficient CO₂ capture.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/hybrid-membrane-absorption-co2.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.30492/ijcce.2019.35853" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">CO₂ Capture</span><span class="tag">Membrane Technology</span><span class="tag">Alkanolamines</span><span class="tag">Energy Efficiency</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Ceramics International, 2020</div>
+          <h3 class="pub-title">Carbon Nanofibers as Potential Materials for Catalysts Support — A Mini-Review</h3>
+          <p class="pub-authors">I.U. Din, M.S. Shaharun, A. Naeem, M.A. Alotaibi, A.I. Alharthi, M.A. Bakht, <span class="me">Qazi Nasir</span></p>
+          <p class="pub-venue">Ceramics International</p>
+          <p class="pub-abstract">Reviews the potential of carbon nanofibers as catalyst supports, discussing their unique properties, synthesis methods, and applications in heterogeneous catalysis.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/carbon-nanofibers-catalyst-support.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1016/j.ceramint.2020.04.275" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Carbon Nanofibers</span><span class="tag">Catalyst Support</span><span class="tag">Nanomaterials</span><span class="tag">Heterogeneous Catalysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Comptes Rendus. Chimie, 2020</div>
+          <h3 class="pub-title">Effect of Reaction Conditions on the Activity of Novel Carbon Nanofiber-Based Cu/ZrO₂ Catalysts for CO₂ Hydrogenation to Methanol</h3>
+          <p class="pub-authors">I.U. Din, M.S. Shaharun, A. Naeem, M.A. Alotaibi, A.I. Alharthi, <span class="me">Qazi Nasir</span></p>
+          <p class="pub-venue">Comptes Rendus. Chimie</p>
+          <p class="pub-abstract">Studied the effect of temperature, pressure, and space velocity on the catalytic activity of Cu/ZrO₂ catalysts supported on carbon nanofibers for CO₂ hydrogenation.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/co2-hydrogenation-methanol-cu-zro2.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.5802/crchim.6" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">CO₂ Hydrogenation</span><span class="tag">Methanol Synthesis</span><span class="tag">Reaction Engineering</span><span class="tag">Catalyst Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Chemical & Engineering Data, 2014</div>
+          <h3 class="pub-title">Measurement of H–LW–V and Dissociation Enthalpy of Carbon Dioxide Rich Synthetic Natural Gas Mixtures</h3>
+          <p class="pub-authors">K.M. Sabil, <span class="me">Qazi Nasir</span>, B. Partoon, A.A. Seman</p>
+          <p class="pub-venue">Journal of Chemical & Engineering Data</p>
+                    <p class="pub-abstract">Measured hydrate-liquid water-vapor equilibrium conditions and dissociation enthalpies for CO₂-rich synthetic natural gas mixtures, providing essential thermodynamic data for gas processing and flow assurance.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/h-lw-v-dissociation-enthalpy-co2.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1021/je500453j" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Gas Hydrates</span><span class="tag">Phase Equilibrium</span><span class="tag">CO₂</span><span class="tag">Thermodynamic Properties</span>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Engineering and Applied Sciences, 2018</div>
+          <h3 class="pub-title">An Overview of Cryogenic Separation Techniques for Natural Gas with High CO₂ Content</h3>
+          <p class="pub-authors">B. Lal, A.M. Shariff, H. Mukhtar, <span class="me">Qazi Nasir</span>, A. Qasim</p>
+          <p class="pub-venue">Journal of Engineering and Applied Sciences</p>
+                    <p class="pub-abstract">Provides an overview of cryogenic separation techniques for removing CO₂ from natural gas streams, comparing process efficiency, energy requirements, and industrial applicability.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/cryogenic-separation-natural-gas-co2.html">Project page</a>
+            <a class="pill" href="http://dx.doi.org/10.3923/jeasci.2018.2152.2155" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Cryogenic Separation</span><span class="tag">Natural Gas Processing</span><span class="tag">CO₂ Removal</span><span class="tag">Process Design</span>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Advanced Materials Research, 2016</div>
+          <h3 class="pub-title">The Presence of Additive Mixtures (THF/SDS) on CO₂ Rich Gas Mixture Hydrate Formation and Dissociation Conditions</h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, B. Lal, K.K. Lau</p>
+          <p class="pub-venue">Advanced Materials Research</p>
+                    <p class="pub-abstract">Investigated the effect of THF and SDS additive mixtures on hydrate formation and dissociation conditions for CO₂-rich gas mixtures for flow assurance applications.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/thf-sds-additive-hydrate-co2.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.4028/www.scientific.net/AMR.1133.639" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Gas Hydrates</span><span class="tag">THF</span><span class="tag">SDS</span><span class="tag">Flow Assurance</span>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Journal of Applied Sciences, 2014</div>
+          <h3 class="pub-title">Measurement and Phase Behavior Modeling (Dew Point + Bubble Point) of CO₂ Rich Gas Mixture</h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, K.M. Sabil, K. Nasrifar</p>
+          <p class="pub-venue">Journal of Applied Sciences</p>
+                    <p class="pub-abstract">Measured and modeled dew point and bubble point phase behavior of CO₂-rich gas mixtures, validating thermodynamic models against experimental data.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/dew-point-bubble-point-co2.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.3923/jas.2014.1061.1066" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Phase Behavior</span><span class="tag">CO₂</span><span class="tag">Thermodynamic Modeling</span><span class="tag">Natural Gas</span>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Chemical Engineering Transactions, 2015</div>
+          <h3 class="pub-title">Comparative Study of Electrolyte Thermodynamic Models for CO₂ Solubility in Water at High Pressure</h3>
+          <p class="pub-authors">H. Suleman, <span class="me">Qazi Nasir</span>, A.S. Maulud, Z. Man</p>
+          <p class="pub-venue">Chemical Engineering Transactions</p>
+                    <p class="pub-abstract">Comparatively evaluated electrolyte thermodynamic models for predicting CO₂ solubility in water at high pressure conditions relevant to carbon capture processes.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/electrolyte-models-co2-solubility.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.3303/CET1545099" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Thermodynamic Modeling</span><span class="tag">CO₂ Solubility</span><span class="tag">Electrolyte Systems</span><span class="tag">Carbon Capture</span>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Synthesis and Reactivity in Inorganic, Metal-Organic, and Nano-Metal Chemistry, 2016</div>
+          <h3 class="pub-title">Study of Annealing Conditions on Particle Size of Nickel Ferrite Nanoparticles</h3>
+          <p class="pub-authors">I.U. Din, S. Tasleem, A. Naeem, M.S. Shaharun, <span class="me">Qazi Nasir</span></p>
+          <p class="pub-venue">Synthesis and Reactivity in Inorganic, Metal-Organic, and Nano-Metal Chemistry</p>
+                    <p class="pub-abstract">Studied the effect of annealing temperature and duration on the particle size and crystallinity of nickel ferrite nanoparticles for catalytic applications.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/annealing-nickel-ferrite-nanoparticles.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.1080/15533174.2014.988226" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Nanoparticles</span><span class="tag">Annealing</span><span class="tag">Nickel Ferrite</span><span class="tag">Materials Characterization</span>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-body">
+          <div class="pub-status"><span class="status-dot published"></span> Applied Mechanics and Materials, 2014</div>
+          <h3 class="pub-title">CO₂ Rich Gas Mixture Hydrate-Liquid Water-Vapor (H-Lw-V) Equilibrium Measurement and Prediction</h3>
+          <p class="pub-authors"><span class="me">Qazi Nasir</span>, K.M. Sabil, K. Nasrifar</p>
+          <p class="pub-venue">Applied Mechanics and Materials</p>
+                    <p class="pub-abstract">Measured and predicted hydrate-liquid water-vapor equilibrium conditions for CO₂-rich gas mixtures using thermodynamic modeling approaches.</p>
+          <div class="pub-links">
+                        <a class="pill pill-primary" href="publications/h-lw-v-equilibrium-co2-prediction.html">Project page</a>
+            <a class="pill" href="https://doi.org/10.4028/www.scientific.net/AMM.625.386" target="_blank" rel="noopener">Paper ↗</a>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Gas Hydrates</span><span class="tag">Phase Equilibrium</span><span class="tag">CO₂</span><span class="tag">Thermodynamic Prediction</span>
+          </div>
+        
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="section-inner reveal-up">
+      <div class="eyebrow">Contact</div>
+      <h2 class="contact-cta">Working on something in chemical engineering, AI, or sustainable energy? Let's talk.</h2>
+      <div class="contact-links">
+        <a data-email-link data-email-text href="#">Email</a>
+        <a href="https://qazinasir.com" target="_blank" rel="noopener">qazinasir.com</a>
+        <a href="https://research.qazinasir.com" target="_blank" rel="noopener">Research</a>
+        <a href="https://github.com/qazinasir" target="_blank" rel="noopener">github.com/qazinasir</a>
+        <a href="https://www.linkedin.com/in/qazinasir" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=MeU6dE8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-5642-7957" target="_blank" rel="noopener">ORCID</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner reveal-up">
+    <div class="footer-note">© 2026 Qazi Nasir · Annandale, Virginia</div>
+    <div class="footer-aside">Researcher, educator, lifelong learner.</div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var email = ['c', 'ontact', '@qazinasir', '.com'].join('');
+    document.querySelectorAll('[data-email-link]').forEach(function (el) {
+      el.href = 'mailto:' + email;
+      if (el.hasAttribute('data-email-text')) el.textContent = email;
+    });
+  })();
+</script>
+
+</body>
+</html>

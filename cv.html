@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Qazi Nasir — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page{ size:A4; margin:13mm 18mm; }
+  *{ box-sizing:border-box; }
+  :root{
+    --ink:       #121A20;
+    --ink-soft:  #4A5761;
+    --ink-faint: #7C8890;
+    --teal:      #0B6D82;
+    --teal-deep: #073E4A;
+    --marker:    #B23A72;
+    --line:      #D2D9D6;
+    --serif: "Source Serif 4", Georgia, serif;
+    --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono:  "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  }
+  body{
+    margin:0; font-family:var(--sans); color:var(--ink); font-size:9.6px; line-height:1.4;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{ margin:0; }
+  a{ color:var(--teal); text-decoration:none; }
+
+  header.cv-header{ display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid var(--ink); padding-bottom:7px; margin-bottom:11px; }
+  .cv-name{ font-family:var(--serif); font-weight:600; font-size:24px; letter-spacing:-0.01em; margin-bottom:3px; }
+  .cv-role{ font-family:var(--mono); font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--teal-deep); }
+  .cv-contact{ text-align:right; font-family:var(--mono); font-size:8.5px; color:var(--ink-soft); line-height:1.6; }
+  .cv-contact a{ color:var(--ink-soft); }
+
+  section{ margin-bottom:10px; break-inside:avoid-page; }
+  .cv-h{
+    font-family:var(--mono); font-size:9.5px; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--marker); border-bottom:1px solid var(--line); padding-bottom:3px; margin-bottom:7px;
+  }
+  .summary{ color:var(--ink-soft); font-size:9.6px; max-width:100%; }
+
+  .entry{ margin-bottom:7px; break-inside:avoid; }
+  .entry:last-child{ margin-bottom:0; }
+  .entry-top{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
+  .entry-role{ font-family:var(--serif); font-weight:600; font-size:11.3px; color:var(--ink); }
+  .entry-date{ font-family:var(--mono); font-size:8.4px; color:var(--ink-faint); white-space:nowrap; }
+  .entry-org{ font-size:9.5px; color:var(--teal-deep); font-weight:500; margin:1px 0 2px; }
+  .entry ul{ margin:2px 0 0; padding-left:14px; color:var(--ink-soft); }
+  .entry li{ margin-bottom:1px; }
+
+  .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:0 26px; }
+
+  .pub-entry{ margin-bottom:6px; break-inside:avoid; }
+  .pub-entry:last-child{ margin-bottom:0; }
+  .pub-entry-title{ font-family:var(--serif); font-weight:600; font-size:10.3px; color:var(--ink); }
+  .pub-entry-meta{ font-family:var(--mono); font-size:8.6px; color:var(--ink-faint); margin-top:1px; }
+
+  .skills-row{ display:flex; gap:8px; flex-wrap:wrap; margin-top:2px; }
+  .skill-item{ font-family:var(--mono); font-size:9px; color:var(--ink-soft); border:1px solid var(--line); border-radius:3px; padding:2px 7px; }
+
+  .distinctions ul{ margin:0; padding-left:14px; color:var(--ink-soft); }
+  .distinctions li{ margin-bottom:2px; }
+
+  footer.cv-footer{ margin-top:14px; padding-top:8px; border-top:1px solid var(--line); font-family:var(--mono); font-size:8px; color:var(--ink-faint); text-align:center; }
+</style>
+</head>
+<body>
+
+<header class="cv-header">
+  <div>
+    <div class="cv-name">Qazi Nasir</div>
+    <div class="cv-role">Ph.D. — Chemical Engineering &amp; AI for Energy</div>
+  </div>
+  <div class="cv-contact">
+    contact@qazinasir.com<br>
+    qazinasir.com · linkedin.com/in/qazinasir<br>
+    Annandale, Virginia, USA · Permanent Resident
+  </div>
+</header>
+
+<section>
+  <div class="cv-h">Profile</div>
+  <p class="summary">Chemical Engineering Ph.D. with 19+ years of academic, research, and industry experience specializing in separations, thermodynamics, CO₂ capture & utilization, gas hydrates, catalysis, and AI-driven process optimization. Proven record of securing competitive international research funding (PETRONAS, TRC Oman, YUTP) and publishing extensively in high-impact journals. Skilled in scaling laboratory innovations to pilot systems, integrating AI and process modeling into chemical engineering solutions. Dedicated educator with ABET-accredited curriculum development experience.</p>
+</section>
+
+<section>
+  <div class="cv-h">Education</div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Ph.D. in Chemical Engineering</div>
+      <div class="entry-date">2012 — 2015</div>
+    </div>
+    <div class="entry-org">Universiti Teknologi PETRONAS (UTP), Malaysia</div>
+    <div class="summary">Dissertation: Thermodynamic and Phase behavior of fluid and clathrate hydrate of carbon dioxide rich gas mixture</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">MSc in Petroleum Engineering</div>
+      <div class="entry-date">2008 — 2009</div>
+    </div>
+    <div class="entry-org">Teesside University, UK</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">BSc in Chemical Engineering</div>
+      <div class="entry-date">2000 — 2004</div>
+    </div>
+    <div class="entry-org">Institute of Chemical Engineering, Pakistan</div>
+  </div>
+</section>
+
+<section>
+  <div class="cv-h">Experience</div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Assistant Professor</div>
+      <div class="entry-date">2016 — Feb 2025</div>
+    </div>
+    <div class="entry-org">Dept. of Chemical &amp; Petrochemical Engineering, University of Nizwa (UNIZWA), Oman</div>
+    <ul>
+      <li>Developed and taught core Chemical Engineering courses: Chemical Process Simulation, Thermodynamics, Plant Design I &amp; II, Natural Gas Processing, Catalysis &amp; Catalytic Reaction, Gas Hydrate.</li>
+      <li>Designed flipped classroom modules and interactive simulation-based labs, increasing student engagement by over 15%.</li>
+      <li>Led ABET-aligned curriculum redesign for multiple core chemical engineering courses.</li>
+      <li>Served on ABET Accreditation Committee (2017–present), contributing to self-study reports and outcome assessments.</li>
+      <li>Mentored over 50 undergraduate and graduate students from diverse backgrounds.</li>
+      <li>Secured competitive research funding and led projects on gas hydrate modeling, CO₂ capture, catalytic hydrogenation, and AI-driven process optimization.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Lecturer / Assistant Professor</div>
+      <div class="entry-date">2010 — 2016</div>
+    </div>
+    <div class="entry-org">School of Chemical &amp; Material Engineering (SCME), NUST, Pakistan</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Research Officer / Graduate Officer</div>
+      <div class="entry-date">2012 — 2015</div>
+    </div>
+    <div class="entry-org">Research Center for CO₂ Capture (RCCO2C), UTP, Malaysia</div>
+    <ul>
+      <li>Conducted thermodynamic and phase behavior studies of vapor-liquid equilibria and gas hydrates using PVT Cell.</li>
+      <li>Published multiple research papers and generated quarterly reports for PETRONAS.</li>
+      <li>Established research collaborations with external organizations and industry partners.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Process Engineer / Apprentice</div>
+      <div class="entry-date">2004 — 2008</div>
+    </div>
+    <div class="entry-org">Pak-American Fertilizer PVT (Ltd), Pakistan</div>
+    <ul>
+      <li>Supervised water treatment plant and laboratory operations for Ammonia Production, Sulfuric Acid (110 MTPD), and Granulated Single Super Phosphate (GSSP) (300 MTPD) plants.</li>
+      <li>Led a multidisciplinary team as Independent Shift Engineer, ensuring smooth plant operations.</li>
+      <li>Monitored and optimized critical process parameters to enhance operational efficiency.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="cv-h">Research Funding &amp; Grants</div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Propane Oxidative Dehydrogenation Using Catalytic Membrane Reactor</div>
+      <div class="entry-date">2023</div>
+    </div>
+    <div class="entry-org">Role: Investigator · Funding: The Research Council (TRC), Oman — Grant # BFP/RGP/EI/18/023</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Kinetic Study of Hydrate Formation: Flow Assurance and Separation of CO₂ Rich Gas Mixture</div>
+      <div class="entry-date">2012 — 2015</div>
+    </div>
+    <div class="entry-org">Role: Investigator · Funding: PETRONAS Research SDN BHD (PRSB), Malaysia</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <div class="entry-role">Lab Scale Measurements and Mathematical Modeling of CO₂ Rich Gas Mixture Phase Behavior</div>
+      <div class="entry-date">2012 — 2015</div>
+    </div>
+    <div class="entry-org">Role: Investigator · Funding: YUTP Fundamental Research Fund, Malaysia</div>
+  </div>
+</section>
+
+<section>
+  <div class="cv-h">Publications</div>
+
+  <div class="pub-entry">
+    <div class="pub-entry-title">Application of Machine Learning on Hydrate Formation Prediction of Pure Components with Water and Inhibitors Solution</div>
+    <div class="pub-entry-meta">Nasir, Q., Suleman, H., Abdul Majeed, W.S. — The Canadian Journal of Chemical Engineering, 2023 — doi.org/10.1002/cjce.25291</div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-entry-title">Predicting Gas Hydrate Equilibria in Multicomponent Systems with a Machine Learning Approach</div>
+    <div class="pub-entry-meta">Nasir, Q., Abdul Majeed, W.S., Suleman, H. — Chemical Engineering &amp; Technology, 2023 — doi.org/10.1002/ceat.202300055</div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-entry-title">A Multi-Layer Perceptron Neural Network Model for Predicting Hydrate Equilibrium Conditions in Multi-Component Hydrocarbon Systems</div>
+    <div class="pub-entry-meta">Nasir, Q., Suleman, H., Ud Din, I., Elfadol, Y.A. — Neural Computing and Applications, 2022 — doi.org/10.1007/s00521-022-07284-4</div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-entry-title">A Review on the Role and Impact of Various Additives as Promoters/Inhibitors for Gas Hydrate Formation</div>
+    <div class="pub-entry-meta">Nasir, Q., Suleman, H., Elsheikh, Y.A. — Journal of Natural Gas Science and Engineering, 2020 — doi.org/10.1016/j.jngse.2020.103211</div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-entry-title">Enhanced Anaerobic Co-Digestion of Food Waste and Solid Poultry Slaughterhouse Waste Using Fixed Bed Digester</div>
+    <div class="pub-entry-meta">Ahmad, A., Ghufran, R., Nasir, Q., et al. — Environmental Technology &amp; Innovation, 2023 — doi.org/10.1016/j.eti.2023.103099</div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-entry-title">CO₂ Conversion to Methanol over Novel Carbon Nanofiber-Based Cu/ZrO₂ Catalysts — A Kinetics Study</div>
+    <div class="pub-entry-meta">Din, I.U., Shaharun, M.S., Naeem, A., Alotaibi, M.A., Alharthi, A.I., Nasir, Q. — Catalysts, 2020 — doi.org/10.3390/catal10050567</div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-entry-title">Measurement of Isothermal (Vapor + Liquid) Equilibria for Binary (CH₄+CO₂) and CO₂ Rich Synthetic Natural Gas Systems</div>
+    <div class="pub-entry-meta">Nasir, Q., Sabil, K.M., Lau, K.K. — Journal of Natural Gas Science and Engineering, 2015 — doi.org/10.1016/j.jngse.2015.08.045</div>
+  </div>
+</section>
+
+<section class="two-col">
+  <div>
+    <div class="cv-h">Skills</div>
+    <div class="skills-row">
+      <span class="skill-item">Python</span><span class="skill-item">MATLAB</span><span class="skill-item">Aspen HYSYS</span><span class="skill-item">Aspen Plus</span><span class="skill-item">COMSOL</span><span class="skill-item">ChemCAD</span><span class="skill-item">ProSim</span><span class="skill-item">AutoCAD</span><span class="skill-item">Machine Learning</span><span class="skill-item">Deep Learning</span><span class="skill-item">Pandas</span><span class="skill-item">NumPy</span><span class="skill-item">scikit-learn</span><span class="skill-item">React.js</span><span class="skill-item">VBA</span>
+    </div>
+    <div class="cv-h" style="margin-top:10px;">Languages</div>
+    <div class="skills-row">
+      <span class="skill-item">English — Fluent</span><span class="skill-item">Urdu — Native</span><span class="skill-item">Arabic — Basic</span>
+    </div>
+  </div>
+  <div>
+    <div class="cv-h">Distinctions</div>
+    <div class="distinctions">
+      <ul>
+        <li>Graduate Assistant Scholarship for PhD Studies (UTP, Malaysia)</li>
+        <li>National Fertilizer Corporation (NFC) Scholarship during Undergraduate</li>
+        <li>2nd Position in College during Higher Secondary School Examinations</li>
+        <li>Recognized Reviewer for Elsevier, Springer, and Wiley journals</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cv-h">Professional Memberships</div>
+  <div class="skills-row">
+    <span class="skill-item">Pakistan Engineering Council</span><span class="skill-item">IChemE</span><span class="skill-item">Intl. Assoc. of Carbon Capture</span><span class="skill-item">Intl. Assoc. of Engineers</span>
+  </div>
+</section>
+
+<footer class="cv-footer">Full portfolio with project pages and up-to-date publications available at qazinasir.com</footer>
+
+</body>
+</html>
